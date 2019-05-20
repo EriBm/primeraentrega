@@ -1,0 +1,22 @@
+{
+  "name": "primeraentrega",
+  "version": "1.0.0",
+  "description": "Primera entrega Curso NodeJS",
+  "main": "principal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EriBm/primeraentrega.git"
+  },
+  "author": "Erica Barrios erica.barrios@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EriBm/primeraentrega/issues"
+  },
+  "homepage": "https://github.com/EriBm/primeraentrega#readme",
+  "dependencies": {
+    "yargs": "^13.2.4"
+  }
+}
