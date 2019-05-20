@@ -53,8 +53,12 @@ fs.writeFile('interesado.txt', texto, (err) => {
 }
 
 let inscribir = cursos.find( inscribirse =>  inscribirse.id == argv.id)
+
+
 if (!inscribir){
-    console.log('No existe ningun curso con el ID: '+  argv.id +' por favor ingrese un ID valido para realizar la inscripcion')
+    if(argv.id){
+        console.log('No existe ningun curso con el ID: '+  argv.id +' por favor ingrese un ID valido para realizar la inscripcion')
+    }
 } else {
     const texto = 'El estudiante: '+ argv.nombre + ' con cedula: '+ argv.cedula+ ' se ha matriculado en el curso '+ inscribir.nombre;
     crearArchivo(texto);
